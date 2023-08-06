@@ -1,0 +1,17 @@
+h2{
+    text-decoration: underline;
+    font-size: 50px;
+    font-weight: lighter;
+    color: brown;
+}
+
+.my{
+    color: blue;
+    border: 2px;
+}
+
+#myID{
+    font-style: italic;
+    font-size: medium;
+    color: blueviolet;
+}

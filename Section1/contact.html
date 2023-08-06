@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <style>
+        .mybody{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            background-image: url(images/img17.png);
+            background-size: cover;
+
+
+        }
+        .myimg{
+            display: block;
+            margin-top: 20px;
+        }
+        .mypara{
+            display:inline;
+            margin-bottom: 30px;
+        }
+        .myinput{
+            display: block;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black ;
+            background: transparent;
+            
+            
+        }
+        .div1{
+            border: 1px solid blueviolet;
+            padding: 50px;
+            height: 65%;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 2px black;
+            background-color: rgba(102, 102, 147, 0.553);
+            margin-bottom: -20px;
+        }
+        .div2{
+            border: 1px solid black;
+            padding: 50px;
+            height: 65%;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 2px black;
+            margin-bottom: -20px;
+            background-color: rgba(254, 251, 255, 0.918);
+        }
+        .myhead{
+            text-align: center;
+            margin-bottom: -50px;
+            color: white;
+            font-family: montserrat;
+            font-size: 40px;
+        }
+        .mybtn{
+            width: 100%;
+            border-radius: 10px;
+            background-color: rgb(49, 49, 90);
+            color: rgb(236, 229, 229);
+            
+            
+        }
+        ::placeholder{
+            color: rgb(242, 240, 243);
+        }
+        .head2{
+            color: rgb(246, 240, 240);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="myhead">Contact Form</h1>
+    <div class="mybody">
+    <div class="div1">
+        <form>
+            <h2 class="head2">SEND US A MESSAGE</h2>
+            
+            <input type="text" class="myinput" placeholder="Full Name">
+        
+            <input type="email"  placeholder="Email" class="myinput">
+            
+            <input type="number" class="myinput" placeholder="Phone">
+            
+            <textarea name="Message" id="" cols="30" rows="3" class="myinput" placeholder="Message"></textarea>
+            <button class="mybtn">Send Message</button>
+
+        </form>
+    </div>
+    <div class="div2">
+        <h2>Contact Us</h2>
+        <p>We are open for any suggestion or just have to chat</p>
+
+        <img src="img14.png" alt="" height="30px" width="30px" class="myimg">
+        <p class="mypara"><b>Address:</b>Tirupati Homes, Faizabad Road, Lucknow</p>
+
+        <img src="img15.png" alt="" height="25px" width="30px" class="myimg">
+        <p class="mypara"><b>Phone:</b>8303240803</p>
+
+        <img src="img16.png" alt="" height="25px" width="30px" class="myimg">
+        <p class="mypara"><b>Email:</b>utkarsh@gamil.com</p>
+         
+        
+    </div>
+</div>
+</body>
+</html>

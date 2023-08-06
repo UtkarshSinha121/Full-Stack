@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Caprasimo:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .mycard{
+            border: 1px solid red; 
+            width: 400px;
+            padding: 50px;
+            border-radius: 10px;
+            background-color:gainsboro;
+            
+        }
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            background-image: linear-gradient(90deg,rgba(10, 9, 9, 0),rgb(138, 95, 58)) , url(img18.jpg); 
+            /* background-image: linear-gradient(60deg, darkgray, gray); */
+            background-size: cover;
+ }
+       .myinput{
+        width: 100%;
+        display:block;
+        margin-bottom: 20px;
+        box-sizing:border-box;
+        padding: 5px 10px;
+       }
+       .mybutton{
+
+        width: 100%;
+        color: aliceblue;
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 30px;
+        border: none;
+        box-shadow: 5px 5px 10px 2px black;
+
+       }
+       .head{
+        font-family: caprasimo;
+        text-align: center;
+        font-size: 40px;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        <i style="display: block; align-items: center;" class="fa-solid fa-key"></i>
+
+        <h2 class="head" style="align-items: center;">LoginForm</h2>
+        <form action="">
+            <label for="">Email</label>
+            <input class="myinput"  type="email" name="" id="">
+
+            <label for="">Password</label>
+            <input class="myinput" type="password" name="" id="">
+            <button class="mybutton">Login</button>
+        </form>
+
+    </div>
+</body>
+</html>

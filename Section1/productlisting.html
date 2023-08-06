@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        header{
+            background-image: linear-gradient(0deg, black, #00000000), url('https://images.alphacoders.com/554/thumbbig-554935.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+        }
+        .card{
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+        .card-body{
+            transform: translateZ(100px);
+        }
+     </style>
+</head>
+  <body>
+    <header>
+        <div class="container py-4">
+            <p class="display-4 text-center text-white mytitle">Black Friday Sale</p>
+            <input type="text" class="form-control w-75 mx-auto myinput">
+            <button class="btn btn-warning mt-5 mysearch"> <i class="fa-solid fa-magnifying-glass"></i> Search item</button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-4">
+                <div class="card">
+
+                   <div style="height: 250px; overflow: hidden;">
+                    <img  class="h-100 m-auto d-block" src="https://m.media-amazon.com/images/I/51xxA+6E+xL._SX679_.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-muted">Sony</h4>
+                        <h3> Wireless Headphones</h3>
+                        <p><i class="fa-solid fa-star text-warning"></i>4.5 stars & <i class="fa-solid fa-comment"></i>4573 Reviews</p>
+
+                       <h3 class="float-end"> ₹2298 </h3>
+                    </div>
+                    <div class="card-footer">
+                    <button class="btn btn-primary float-end">Buy Now</button>
+</div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div style="height: 250px; overflow: hidden;">
+                    <img  class="h-100 m-auto d-block" src="https://m.media-amazon.com/images/I/51JbsHSktkL._AC_UF1000,1000_QL80_.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-muted">Sony</h4>
+                        <h3> Wireless Headphones</h3>
+                        <p><i class="fa-solid fa-star text-warning"></i>4.5 stars & <i class="fa-solid fa-comment"></i>4573 Reviews</p>
+
+                       <h3 class="float-end"> ₹2298 </h3>
+                    </div>
+                    <div class="card-footer">
+                    <button class="btn btn-primary float-end">Buy Now</button>
+</div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                   <div style="height: 250px; overflow: hidden;">
+                    <img  class="h-100 m-auto d-block" src="https://m.media-amazon.com/images/I/51xxA+6E+xL._SX679_.jpg" alt="">
+                   </div>
+                     
+                    <div class="card-body">
+                        <h4 class="text-muted">Sony</h4>
+                        <h3> Wireless Headphones</h3>
+                        <p><i class="fa-solid fa-star text-warning"></i>4.5 stars & <i class="fa-solid fa-comment"></i>4573 Reviews</p>
+
+                       <h3 class="float-end"> ₹2298 </h3>
+                    </div>
+                    <div class="card-footer">
+                    <button class="btn btn-primary float-end">Buy Now</button>
+</div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <div class="card">
+                    <div style="height: 250px; overflow: hidden;">
+                    <img  class="h-100 m-auto d-block" src="https://www.energysistem.com/cdnassets/products/45305/principal_2000.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="text-muted">Sony</h4>
+                        <h3> Wireless Headphones</h3>
+                        <p><i class="fa-solid fa-star text-warning"></i>4.5 stars & <i class="fa-solid fa-comment"></i>4573 Reviews</p>
+
+                       <h3 class="float-end"> ₹2298 </h3>
+                    </div>
+                    <div class="card-footer">
+                    <button class="btn btn-primary float-end">Buy Now</button>
+</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <script>
+        ScrollReveal().reveal('.mytitle', { delay:500, origin: 'left', distance:'100px', opacity:0,});
+     </script>
+     <script>
+        ScrollReveal().reveal('.myinput', { delay:500, origin: 'left', distance:'100px', opacity:0,});
+     </script>
+     <script>
+        ScrollReveal().reveal('.mysearch', { delay:500, origin: 'left', distance:'100px', opacity:0,});
+     </script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <script>
+        VanillaTilt.init( document.querySelectorAll('.card')),{
+            max: 10,
+            speed: 500,
+            glare: true
+        }
+       </script>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking Form</title>
+    <style>
+        form{
+           background-image: url(images/img11.jpg);
+           background-size: 100%;
+           background-repeat: no-repeat;
+           padding: 10px;
+           
+        }
+        h1{
+            margin-bottom: 0px;
+            color: blueviolet;
+            font-style: italic;
+        }
+        label{
+            color:blueviolet;
+            font-style: italic;
+            font-size:x-large;
+        }
+        #imgID{
+            border-width: 40px;
+            border-color: black;
+            background-color: brown;
+           
+        }
+        #hID{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 10vh;
+
+        }
+         .my{
+            background-image: url(images/img7.jpg);
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            text-decoration-color: blueviolet;
+
+           
+
+        }
+        
+        #form
+        {
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            margin-bottom: 1%;
+            display:flex;
+            font-style: border ;
+            
+           
+             }
+             .myin{
+                width:50%;
+             }
+    
+       
+    </style>
+</head>
+<body class="my">
+    <div >
+        <div id="hID">  
+      <h1>Movie Ticket Booking Form</h1>  </div>
+      <div id="imgID">
+
+        <img src="images/img.jpg" alt="">
+        <img src="images/img2.jpg" alt="">
+        </div>
+        <div>
+        <img src="images/img3.jpg" alt="">
+        <img src="images/img4.jpg" alt="">
+         </div>
+      <div id="form">
+      <form>
+      <label for="Movie Name">Select Movie</label>
+      <select class="myin" id="">
+        <option value="">None</option>
+        <option value="">Bahubali</option>
+        <option value="">RRR</option>
+        <option value="">KGF</option>
+    </select><br><br>
+
+    <label for="">Screen Type</label>
+    <select class="myin" name="" id="">
+        <option value="">None</option>
+        <option value="">2D</option>
+        <option value="">3D</option>
+    </select><br><br>
+
+
+    <label for="">Select Date</label>
+    <input class="myin" type="date" name="" id="">
+<br><br>
+    <label for="">Select Show Time</label>
+    <input type="radio" name="Time" >9am-12pm
+    <input type="radio" name="Time" >12pm-3pm
+    <input type="radio" name="Time" >3pm-6pm
+    <input type="radio" name="Time" >6pm-9pm
+    <br><br>
+
+    <label for="">Seat Type</label> 
+    <input type="radio" name="Seat" >Silver:Rs200
+    <input type="radio" name="Seat" >Gold:Rs250
+    <input type="radio" name="Seat" >Diamond:Rs300
+    <br><br>
+    
+
+    <label for="">No. Of Tickets</label>
+    <input class="myin" type="number" name="" id=""><br><br>
+
+
+   <button>RESET</button> <button>BOOK NOW</button>
+      
+    </Form>
+        
+    </div>
+        
+        </div>
+</body>
+</html>
