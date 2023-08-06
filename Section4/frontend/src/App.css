@@ -1,0 +1,60 @@
+.myclass{
+  color: red;
+  font-size: 30px;
+  font-weight: 30px;
+}
+
+.nav-item .active{
+  font-weight: bold;
+  color: red !important;
+  border: 2px solid red;
+}
+
+.chatbox{
+  position: fixed;
+  bottom: 0;
+  width: 85%;
+  background-color: rgb(138, 125, 125);
+  height: 70%;
+  position: fixed;
+  overflow: scroll;
+  
+
+}
+.sentmsg{
+  max-width: 500px;
+  background-color: blueviolet;
+  color: white;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.bg{
+  background-image:url(images/img17.png);
+}
+.div1{
+  background-color: rgba(102, 102, 147, 0.553);
+}
+.myinput{
+  display: block;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black ;
+  background: transparent;
+  
+}
+::placeholder{
+  color: rgb(242, 240, 243);
+}
+.card2{
+  background-color: rgb(172, 158, 237);
+}
+.error-label{
+  color:red;
+  display:inline;
+  font-weight:lighter;
+  font: size 5px;
+  margin-left: 5px;
+}
