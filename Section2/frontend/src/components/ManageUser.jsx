@@ -41,6 +41,7 @@ const ManageUser = () => {
                 <th>Email</th>
                 <th>Password</th>
                 <th></th>
+                <th></th>
             </tr>
             </thead>
             <tbody>

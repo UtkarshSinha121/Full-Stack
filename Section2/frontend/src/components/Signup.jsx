@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import * as Yup from 'yup';
 
@@ -18,7 +18,7 @@ const Signup = () => {
 
   const navigate = useNavigate();
 
- 
+ const [selImage, setselImage] = useState('');
 
   const signupForm = useFormik({
     initialValues: {
@@ -29,6 +29,7 @@ const Signup = () => {
     },
 
     onSubmit: async (values) => {
+      values.avatar = selImage;
       console.log(values);
 
       //sending request to backend
@@ -61,7 +62,7 @@ const Signup = () => {
 
   const uploadFile = async (e) => {
     let file = e.target.files[0];
-
+    setselImage(file.name);
     const fd = new FormData();
     fd.append('myfile', file);
 

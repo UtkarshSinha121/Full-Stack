@@ -79,41 +79,14 @@ const Navbar = () => {
              ManageUser
           </NavLink>
         </li>
-        
-        <li className="nav-item dropdown">
-          <Link
-            className="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Dropdown
-          </Link>
-          <ul className="dropdown-menu">
-            <li>
-              <Link className="dropdown-item" href="#">
-                Action
-              </Link>
-            </li>
-            <li>
-              <Link className="dropdown-item" href="#">
-                Another action
-              </Link>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <Link className="dropdown-item" href="#">
-                Something else here
-              </Link>
-            </li>
-          </ul>
-        </li>
         <li className="nav-item">
-          <Link className="nav-link disabled">Disabled</Link>
+          <NavLink className="nav-link" to="">
+             Log Out
+          </NavLink>
         </li>
+        
+       
+        
       </ul>
       <form className="d-flex" role="search">
         <input

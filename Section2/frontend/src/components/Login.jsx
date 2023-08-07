@@ -33,6 +33,9 @@ const Login = () => {
           icon : 'success',
           title : 'Login Success!!'
         });
+
+        const data = await res.json();
+        sessionStorage.setItem('user', JSON.stringify(data));
         
       }else if(res.status === 401){
           Swal.fire({
