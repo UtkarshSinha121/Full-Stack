@@ -2,6 +2,7 @@ import React from 'react'
 import {useFormik} from 'formik'
 import * as Yup from 'yup';
 import Swal from 'sweetalert2';
+import useUserContext from '../UserContext';
 
 const  loginSchema = Yup.object().shape({
   
@@ -9,6 +10,8 @@ const  loginSchema = Yup.object().shape({
 });
 
 const Login = () => {
+
+  const {setloggedIn} = useUserContext();
 
   // initializing formik
   const loginForm = useFormik({
@@ -36,6 +39,8 @@ const Login = () => {
 
         const data = await res.json();
         sessionStorage.setItem('user', JSON.stringify(data));
+
+        setloggedIn(true)
         
       }else if(res.status === 401){
           Swal.fire({

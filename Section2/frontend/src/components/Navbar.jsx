@@ -1,7 +1,37 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import useUserContext from '../UserContext'
 
 const Navbar = () => {
+
+ const {loggedIn, logout} = useUserContext();
+
+ const showLoginOption = () => {
+   if(loggedIn){
+    return (
+        <li className='nav-item'>
+          <button onClick={logout} className='btn btn-danger'>Logout</button>
+        </li>
+      
+    );
+   }else{
+      return(
+        <>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/login">
+             Login
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/signup">
+             Signup
+          </NavLink>
+        </li>
+        </>
+      )
+   }
+ }
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
@@ -26,16 +56,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/login">
-             Login
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="/signup">
-             Signup
-          </NavLink>
-        </li>
+        
         <li className="nav-item">
           <NavLink className="nav-link" to="/event">
              EventHandling
@@ -79,13 +100,9 @@ const Navbar = () => {
              ManageUser
           </NavLink>
         </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" to="">
-             Log Out
-          </NavLink>
-        </li>
         
-       
+        
+       {showLoginOption()}
         
       </ul>
       <form className="d-flex" role="search">
