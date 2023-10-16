@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 const { useContext } = require("react");
 const { useState } = require("react");
 const { createContext } = require("react");
@@ -6,7 +8,9 @@ const { createContext } = require("react");
  const UserContext = createContext();
 
  //create a provider
- export const  UserProvider = ({children}) => {
+ export const  UserProvider = ({children}) => 
+   {
+   const navigate = useNavigate();
     // get user data from session and convert to js using 'JSON.parse()'
    // and store in state
      const [currentUser, setcurrentUser] = useState(
@@ -18,6 +22,7 @@ const { createContext } = require("react");
         sessionStorage.removeItem('user');
         setcurrentUser(null);
         setloggedIn(false);
+        navigate('/login');
      }
 
     return <UserContext.Provider value={{ loggedIn, setloggedIn, logout}}>

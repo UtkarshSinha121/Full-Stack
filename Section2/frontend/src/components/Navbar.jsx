@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import useUserContext from '../UserContext'
 
@@ -6,13 +6,21 @@ const Navbar = () => {
 
  const {loggedIn, logout} = useUserContext();
 
+ const [currentUser, setcurrentUser] = useState(
+    JSON.parse(sessionStorage.getItem('user'))
+ );
+
  const showLoginOption = () => {
    if(loggedIn){
     return (
+      <>
         <li className='nav-item'>
           <button onClick={logout} className='btn btn-danger'>Logout</button>
         </li>
-      
+        <li>
+          <img width={40} className='ms-4 rounded-circle' src={"http://localhost:5000/"+currentUser.avatar} alt="" />
+        </li>
+        </>
     );
    }else{
       return(
@@ -105,17 +113,7 @@ const Navbar = () => {
        {showLoginOption()}
         
       </ul>
-      <form className="d-flex" role="search">
-        <input
-          className="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button className="btn btn-outline-success" type="submit">
-          Search
-        </button>
-      </form>
+     
     </div>
   </div>
 </nav>

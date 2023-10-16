@@ -76,7 +76,7 @@ const Login = () => {
             <div className="form-outline ">
             <label htmlFor="">Email</label>
             <p>{loginForm.errors.email}</p>
-            <input className="form-control mb-4" type="email" name="email" onChange={loginForm.handleChange} value={loginForm.values.email}/>
+            <input className="form-control mb-4" type="email" name="email" onChange={loginForm.handleChange} value={loginForm.values.email} />
             </div>
             <div>  
               <label htmlFor="">Password</label>

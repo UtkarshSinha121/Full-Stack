@@ -62,7 +62,7 @@ const AddProduct = () => {
       <div className="card w-25  shadow-lg rounded-3">
         <div className="card-body  p-2">
           {/* <i className="fa-solid fa-lock fa-3x d-block text-center" /> */}
-          <h2 className="text-center my-3">Signup Form</h2>
+          <h2 className="text-center my-3">Add Product</h2>
           <form onSubmit={addproductForm.handleSubmit}>
             <label htmlFor="">Product Name</label>
             <p className='error-label'>{addproductForm.touched.product ? addproductForm.errors.product : ''}</p>

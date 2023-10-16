@@ -12,8 +12,8 @@ const Browse = () => {
             <div className='card'>
                 <img src={laptop.image} alt="" />
                 <div className='card-body'>
-                    <h4>{laptop.tittle}</h4>
-                    <p>{laptop.rating} avg rating</p>
+                    <h4>{laptop.name}</h4>
+                    <p>{laptop.price} avg rating</p>
                     <p>{laptop.reviews} reviews</p>
                     <h2>₹{laptop.price}</h2>
 
@@ -26,10 +26,9 @@ const Browse = () => {
     const filterLaptop = (e)=>{
         const value = e.target.value;
         setlaptopList(laptopData.filter((laptop) =>{
-            return laptop.title.toLowerCase().includees(value.toLowerCase())
+            return laptop.tittle.toLowerCase().includes(value.toLowerCase())
         } ));
     }
-
       return(
     
     <div>

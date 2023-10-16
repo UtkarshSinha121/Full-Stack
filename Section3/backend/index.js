@@ -23,6 +23,8 @@ app.use('/product', ProductRouter);
 app.use('/contact', ContactRouter);
 app.use('/util', UtilRouter);
 app.use('/addproduct', AddproductRouter);
+
+app.use(express.static('./uploads'));
 //creating routes
 app.get('/',(req, res)=>{
     res.send('response from express server');
